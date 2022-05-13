@@ -5,6 +5,10 @@ import Auth from '../utils/auth';
 import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
+// TODO: USE MUTATION SAVE_BOOK
+// handleSaveBook() replaces saveBook()
+// bookID in try-catch with useState
+
 const SearchBooks = () => {
   // create state for holding returned google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
