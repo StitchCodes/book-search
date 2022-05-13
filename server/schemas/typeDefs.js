@@ -37,8 +37,8 @@ type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   user(username: String!): User
   # TODO: need to passs authors as string
-  saveBook(authors: String!, description: String!, title: String!, image: String!, link: String!): User
-  removeBook(bookId: String!): User
+  saveBook(authors: String!, description: String!, title: String!, image: String!, link: String!): Book
+  removeBook(bookId: String!): Book
 }
 `;
 
