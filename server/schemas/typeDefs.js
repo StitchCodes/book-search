@@ -27,7 +27,7 @@ type Book {
 }
 
 type Query {
-  me(email: String!, password: String!): User
+  me: User
   books(title: String!): [Book]
 }
 
@@ -35,7 +35,7 @@ type Mutation {
   # mutation goes here
   login(email: String!, password: String!): Auth
   addUser(username: String!, email: String!, password: String!): Auth
-  # TODO: get single user
+  user(username: String!): User
   # TODO: need to passs authors as string
   saveBook(authors: String!, description: String!, title: String!, image: String!, link: String!): User
   removeBook(bookId: String!): User
